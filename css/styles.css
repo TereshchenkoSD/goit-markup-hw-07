@@ -126,11 +126,11 @@ address {
   align-items: center;
 }
 
-.navigation-list {
+.navigation__list {
   display: flex;
 }
 
-.navigation-list-item {
+.navigation__list-item {
   position: relative;
 }
 
@@ -145,31 +145,11 @@ address {
   border-radius: 2px;
 }
 
-.navigation-list-item:not(:last-child) {
+.navigation__list-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact {
-  margin-left: auto;
-}
-.contact-list {
-  display: flex;
-}
-
-.contact-list-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.logo {
-  color: rgba(0, 0, 0, 1);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.navigation-link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -181,7 +161,18 @@ address {
   transition-timing-function: var(--time-function);
 }
 
-.contact-link {
+.contact {
+  margin-left: auto;
+}
+.contact__list {
+  display: flex;
+}
+
+.contact__list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -194,17 +185,26 @@ address {
   transition-timing-function: var(--time-function);
 }
 
-.contact-icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 
-.logo-web,
+.logo {
+  color: rgba(0, 0, 0, 1);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo__web,
 .current,
-.navigation-link:hover,
-.navigation-link:focus,
-.contact-link:hover,
-.contact-link:focus {
+.navigation__link:hover,
+.navigation__link:focus,
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
 
@@ -229,7 +229,7 @@ address {
   text-align: center;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   color: var(--tertiary-text-color);
@@ -240,7 +240,7 @@ address {
   text-transform: uppercase;
 }
 
-.hero-btn {
+.hero__btn {
   min-width: 200px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -950,12 +950,10 @@ address {
 }
 
 .footer-logo {
-  color: var(--tertiary-text-color);
-}
-
-.footer-logo {
   display: block;
   margin-bottom: 25px;
+
+  color: var(--tertiary-text-color);
 }
 
 .address-list-item:not(:last-child) {
