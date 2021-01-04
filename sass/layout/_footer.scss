@@ -1,0 +1,124 @@
+.footer {
+  background-color: var(--primary-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 25px;
+
+  color: var(--tertiary-text-color);
+}
+
+.address__list-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__list-link {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
+.address__list-link:hover,
+.address__list-link:focus {
+  color: var(--accent-color);
+}
+
+.white-text {
+  color: var(--tertiary-text-color);
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__address-container {
+  margin-right: 70px;
+}
+
+.footer__social-container {
+  width: 206px;
+  margin-right: 93px;
+}
+
+.footer__join-text {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--tertiary-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer__social-container .social__list {
+  justify-content: space-between;
+}
+
+.footer__subscribe-container {
+  width: 570px;
+}
+
+.footer__subscribe-text {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  color: var(--tertiary-text-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.footer__subscribe-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__subscribe-input {
+  width: 358px;
+  height: 50px;
+
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+
+  background-color: var(--primary-bg-color);
+}
+
+.footer__subscribe-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer__subscribe-btn {
+  display: flex;
+  align-items: center;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.subscribe-btn__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
+.bg-grey {
+  background-color: var(--bg-link-color);
+}

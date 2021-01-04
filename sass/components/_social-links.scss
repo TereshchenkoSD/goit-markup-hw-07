@@ -1,0 +1,30 @@
+.social__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.social__list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  color: var(--primary-link-color);
+
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
+.social__list-icon {
+  fill: currentColor;
+}
+
+.social__list-link:hover,
+.social__list-link:focus {
+  background-color: var(--accent-color);
+  color: var(--tertiary-text-color);
+}
