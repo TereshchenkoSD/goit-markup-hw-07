@@ -97,7 +97,7 @@ address {
   padding-bottom: 94px;
 }
 
-.filter__list {
+.filter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -107,11 +107,11 @@ address {
   margin-bottom: 50px;
 }
 
-.filter__list-item:not(:last-child) {
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter__list-btn {
+.filter__btn {
   min-width: 74px;
   padding-top: 6px;
   padding-bottom: 6px;
@@ -137,17 +137,16 @@ address {
           transition-timing-function: var(--time-function);
 }
 
-.filter__list-btn:hover,
-.filter__list-btn:focus,
-.btn-current {
+.filter__btn:hover, .filter__btn:focus {
   color: var(--tertiary-bg-color);
   background-color: var(--accent-color);
-}
-
-.filter__list-btn:hover,
-.filter__list-btn:focus {
   -webkit-box-shadow: var(--fltr-btn-shadow);
           box-shadow: var(--fltr-btn-shadow);
+}
+
+.filter__btn--active {
+  color: var(--tertiary-bg-color);
+  background-color: var(--accent-color);
 }
 
 .btn {
