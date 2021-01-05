@@ -5,8 +5,19 @@
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
 
-.logo__web {
-  color: var(--accent-color);
+  &__web {
+    color: var(--accent-color);
+  }
+
+  .header & {
+    margin-right: 92px;
+  }
+
+  .footer & {
+    display: block;
+    margin-bottom: 25px;
+
+    color: var(--tertiary-text-color);
+  }
 }
