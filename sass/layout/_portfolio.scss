@@ -1,105 +1,105 @@
 .portfolio {
   background-color: var(--secondary-bg-color);
+}
 
-  &__card-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * var(--card-set-gap));
-    margin-top: calc(-1 * var(--card-set-gap));
+.portfolio__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.portfolio__card-item {
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+
+  background: #ffffff;
+
+  &:nth-child(3n) {
+    margin-right: 0;
   }
+}
 
-  &__card-item {
-    flex-basis: calc(100% / 3 - var(--card-set-gap));
-    margin-left: var(--card-set-gap);
-    margin-top: var(--card-set-gap);
+.portfolio__card-link {
+  display: block;
 
-    background: #ffffff;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
 
-    &:nth-child(3n) {
-      margin-right: 0;
-    }
+  &:hover,
+  &:focus {
+    box-shadow: var(--card-shadow);
   }
+}
 
-  &__card-link {
-    display: block;
+.portfolio__img-container {
+  position: relative;
+  overflow: hidden;
+}
 
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: var(--time-function);
+.portfolio__card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-left: 24px;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
 
-    &:hover,
-    &:focus {
-      box-shadow: var(--card-shadow);
-    }
+  opacity: 0;
 
-    &:hover .portfolio__card-overlay,
-    &:focus .portfolio__card-overlay {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  background-color: rgba(33, 150, 243, 0.9);
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.555;
+  letter-spacing: 0.03em;
+  color: var(--tertiary-text-color);
+
+  transform: translateY(100%);
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+
+  .portfolio__card-link:hover &,
+  .portfolio__card-link:focus & {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
 
-  &__img-container {
-    position: relative;
-    overflow: hidden;
-  }
+.portfolio__text-wrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 
-  &__card-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding-left: 24px;
-    padding-top: 63px;
-    padding-right: 24px;
-    padding-bottom: 63px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 
-    opacity: 0;
+  text-align: left;
+}
 
-    background-color: rgba(33, 150, 243, 0.9);
+.portfolio__card-title {
+  margin-bottom: 4px;
 
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.555;
-    letter-spacing: 0.03em;
-    color: var(--tertiary-text-color);
+  color: var(--primary-text-color);
 
-    transform: translateY(100%);
-    transition-property: transform, opacity;
-    transition-duration: 250ms;
-    transition-timing-function: var(--time-function);
-  }
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
 
-  &__text-wrapper {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    padding-right: 24px;
-
-    border-right: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-
-    text-align: left;
-  }
-
-  &__card-title {
-    margin-bottom: 4px;
-
-    color: var(--primary-text-color);
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-  }
-
-  &__card-subtitle {
-    color: var(--secondary-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
-  }
+.portfolio__card-subtitle {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
 }

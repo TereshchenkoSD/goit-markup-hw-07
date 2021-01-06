@@ -108,8 +108,8 @@ address {
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
 }
@@ -135,8 +135,8 @@ address {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--tertiary-text-color);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -184,14 +184,10 @@ address {
 .logo {
   color: black;
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   letter-spacing: 0.03em;
-}
-
-.logo__web {
-  color: var(--accent-color);
 }
 
 .header .logo {
@@ -202,6 +198,10 @@ address {
   display: block;
   margin-bottom: 25px;
   color: var(--tertiary-text-color);
+}
+
+.logo__web {
+  color: var(--accent-color);
 }
 
 .backdrop {
@@ -276,8 +276,8 @@ address {
   display: block;
   margin-bottom: 12px;
   text-align: center;
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.172;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
@@ -295,8 +295,8 @@ address {
 
 .modal__form-field {
   margin-bottom: 10px;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.171;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
@@ -304,8 +304,8 @@ address {
 
 .modal__form-textarea {
   display: inline-block;
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
   line-height: 1.171;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
@@ -391,6 +391,10 @@ address {
           transition-timing-function: var(--time-function);
 }
 
+.modal__form-input:focus + .modal__form-icon {
+  fill: var(--accent-color);
+}
+
 .modal__form-policy-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -402,8 +406,8 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 30px;
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
@@ -425,21 +429,6 @@ address {
           transition-timing-function: var(--time-function);
 }
 
-.modal__form-policy-link {
-  margin-left: 5px;
-  color: var(--accent-color);
-}
-
-.modal__form-btn {
-  padding-left: 55px;
-  padding-right: 55px;
-  margin: 0 auto;
-}
-
-.modal__form-input:focus + .modal__form-icon {
-  fill: var(--accent-color);
-}
-
 .modal__form-policy:checked + .modal__form-policy-text::before {
   background-color: var(--accent-color);
   background-image: url("../icons/check.svg");
@@ -450,6 +439,17 @@ address {
 
 .modal__form-policy:focus + .modal__form-policy-text::before {
   border-color: var(--accent-color);
+}
+
+.modal__form-policy-link {
+  margin-left: 5px;
+  color: var(--accent-color);
+}
+
+.modal__form-btn {
+  padding-left: 55px;
+  padding-right: 55px;
+  margin: 0 auto;
 }
 
 .close-btn {
@@ -486,8 +486,8 @@ address {
   top: 0;
   left: 0;
   z-index: 1;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   background-color: var(--secondary-bg-color);
@@ -615,8 +615,8 @@ address {
 .hero__title {
   margin-bottom: 30px;
   color: var(--tertiary-text-color);
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -665,8 +665,8 @@ address {
 .features__item-title {
   margin-bottom: 10px;
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.142;
   text-align: left;
   text-transform: uppercase;
@@ -675,8 +675,8 @@ address {
 
 .features__item-subtitle {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.714;
   text-align: left;
   letter-spacing: 0.03em;
@@ -689,8 +689,8 @@ address {
 .services__title {
   margin-bottom: 50px;
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
@@ -721,8 +721,8 @@ address {
   text-align: center;
   color: var(--tertiary-text-color);
   background: rgba(47, 48, 58, 0.8);
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.141;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -739,8 +739,8 @@ address {
 .team__title {
   margin-bottom: 50px;
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
@@ -771,23 +771,23 @@ address {
 }
 
 .team__item-title {
-  text-align: center;
   margin-bottom: 10px;
   color: var(--primary-text-color);
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .team__item-subtitle {
-  text-align: center;
+  margin-bottom: 16px;
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.187;
   letter-spacing: 0.03em;
-  margin-bottom: 16px;
+  text-align: center;
 }
 
 .clients {
@@ -798,8 +798,8 @@ address {
 .clients__title {
   margin-bottom: 50px;
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.166;
   text-align: center;
   letter-spacing: 0.03em;
@@ -879,8 +879,8 @@ address {
   display: inline-block;
   margin-bottom: 20px;
   color: var(--tertiary-text-color);
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.172;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -944,8 +944,8 @@ address {
 
 .address__list-link {
   color: rgba(255, 255, 255, 0.6);
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   -webkit-transition-property: color;
