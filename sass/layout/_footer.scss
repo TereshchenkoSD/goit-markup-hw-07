@@ -47,13 +47,13 @@
   padding-top: 15px;
   padding-bottom: 15px;
 
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid var(--secondary-border-color);
   border-radius: 4px;
 
   background-color: var(--primary-bg-color);
 
   &::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--primary-placeholder-color);
   }
 }
 
@@ -74,7 +74,7 @@
 }
 
 .address__list-link {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--secondary-link-color);
   @include font(14px, 400, 1.71);
   letter-spacing: 0.03em;
 
