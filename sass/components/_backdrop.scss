@@ -5,7 +5,7 @@
   z-index: 2;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: var(--modal-bg-color);
 
   transition-property: all;
   transition-duration: 500ms;
@@ -92,7 +92,7 @@
   width: 100%;
   height: 40px;
   padding-left: 42px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--primary-border-color);
   border-radius: 4px;
 
   transition-property: border-color;
@@ -116,7 +116,7 @@
   margin-top: 4px;
   margin-bottom: 20px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid var(--primary-border-color);
   border-radius: 4px;
   resize: none;
 
@@ -165,7 +165,7 @@
     content: '';
     width: 16px;
     height: 15px;
-    border: 2px solid #000000;
+    border: 2px solid rgb(0, 0, 0);
     border-radius: 2px;
     margin-right: 8px;
 

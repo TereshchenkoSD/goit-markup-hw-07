@@ -49,7 +49,7 @@
   transition-timing-function: var(--time-function);
 
   &:hover,
-  :focus {
+  &:focus {
     color: var(--accent-color);
   }
 
@@ -94,7 +94,7 @@
   transition-timing-function: var(--time-function);
 
   &:hover,
-  :focus {
+  &:focus {
     color: var(--accent-color);
   }
 }
